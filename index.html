@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengeluaran Mahasiswa Kos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Pengeluaran Mahasiswa Kos</h1>
+    <p>Hitung sisa uang bulanan berdasarkan pengeluaran ongkos, makanan, dan sewa kos.</p>
+  </header>
+
+  <main>
+    <section id="calculator">
+      <h2>Masukkan Data Pengeluaran</h2>
+      <form id="expenseForm">
+        <label for="initialAmount">Uang Awal per Bulan (Rp):</label>
+        <input type="number" id="initialAmount" name="initialAmount" required>
+
+        <label for="transport">Pengeluaran Ongkos (Rp):</label>
+        <input type="number" id="transport" name="transport" required>
+        
+        <label for="food">Pengeluaran Makanan (Rp):</label>
+        <input type="number" id="food" name="food" required>
+        
+        <label for="rent">Sewa Kos (Rp):</label>
+        <input type="number" id="rent" name="rent" required>
+        
+        <button type="button" onclick="calculateTotal()">Hitung Sisa Uang</button>
+      </form>
+      
+      <div id="result">
+        <h3>Total Pengeluaran:</h3>
+        <p id="totalOutput">Rp 0</p>
+        <h3>Sisa Uang:</h3>
+        <p id="remainingOutput">Rp 0</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Pengeluaran Mahasiswa Kos</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
